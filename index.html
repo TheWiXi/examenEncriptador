@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/js/main.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header> 
+        <div class="header_container">
+            <img class="conenedor_logo" src="/assest/img/Logo.png" alt="Logo" />
+        </div>
+    </header>
+    <main>
+        <section class="formInput_container">
+            <form id = "form">
+                <textarea class="inputText" name= "chain" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="formInput_control">
+                    <div class="alert_message">
+                        <img src="/assest/img/IconoExclamacion.png"><small>Solo letras minusculas y sin acentos.</small>
+                    </div>
+                    <div class ="inputButton">
+                        <input type="submit" data-accion="encrypt" value="Encriptar">
+                        <input type="submit" data-accion="decrypt" value="Desencriptar">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <aside class="formOutput_container">
+            <article class="form-output active">
+                <img src="/assest/img/Muñeco.png">
+                <h1>Ningun mensaje fue encontrado.</h1>
+                <p>Ingresa el texto que desees encriptar o denecriptar.</p>
+            </article>
+            <article class="form-output_response">
+                <p></p>
+                <input type="button" id="copy" value="Copiar">
+            </article>
+        </aside>
+    </main> 
+</body>
+</html>
